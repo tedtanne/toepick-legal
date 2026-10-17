@@ -1,0 +1,39 @@
+/* ToePick · Copyright © 2026 Noumena Holdings, LLC. All rights reserved. */
+:root {
+  --bg: #ffffff;
+  --text: #1c1c1e;
+  --muted: #5f6368;
+  --accent: #0a66d9;
+  --rule: #e3e3e8;
+  --panel: #f4f5f8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111214;
+    --text: #ececef;
+    --muted: #a0a3aa;
+    --accent: #5aa2ff;
+    --rule: #2a2c31;
+    --panel: #1b1d21;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+header { border-bottom: 1px solid var(--rule); margin-bottom: 28px; padding-bottom: 16px; }
+.brand { font-weight: 900; letter-spacing: 0.12em; color: var(--accent); text-decoration: none; }
+h1 { font-size: 1.9rem; line-height: 1.2; margin: 12px 0 4px; }
+h2 { font-size: 1.2rem; margin: 32px 0 8px; }
+.meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+a { color: var(--accent); }
+ul { padding-left: 1.2em; }
+li { margin: 4px 0; }
+.summary { background: var(--panel); border-radius: 12px; padding: 14px 18px; }
+.summary p { margin: 6px 0; }
+footer { border-top: 1px solid var(--rule); margin-top: 40px; padding-top: 16px; color: var(--muted); font-size: 0.9rem; }
+footer a { margin-right: 14px; }
